@@ -33,56 +33,8 @@ improvised version of code.
 
 # Output:
 
-Bucket Summary:
-==================================================
-Name: prod-data, Region: us-west-2, Size: 120 GB, Versioning: True
-Name: dev-app-logs, Region: us-east-1, Size: 10 GB, Versioning: False
-Name: backup, Region: eu-central-1, Size: 80 GB, Versioning: True
-Name: audit-logs, Region: ap-southeast-1, Size: 50 GB, Versioning: True
-Name: test-results, Region: us-west-1, Size: 15 GB, Versioning: False
-Name: old-backups, Region: us-east-2, Size: 200 GB, Versioning: True
-Name: staging-resources, Region: eu-west-1, Size: 30 GB, Versioning: False
-Name: app-analytics, Region: ap-northeast-1, Size: 250 GB, Versioning: True
-Name: raw-data, Region: us-west-2, Size: 90 GB, Versioning: False
-Name: compliance-data, Region: ca-central-1, Size: 300 GB, Versioning: True
-==================================================
+<img width="682" alt="Screenshot 2024-11-26 at 4 43 31 PM" src="https://github.com/user-attachments/assets/f75f64ca-f0fc-4a95-91ba-8f4f29308adf">
 
-Large Buckets Unused for 90+ Days:
-Name: prod-data, Size: 120 GB, Created On: 2023-10-12
-Name: old-backups, Size: 200 GB, Created On: 2020-08-15
-Name: app-analytics, Size: 250 GB, Created On: 2021-03-18
-Name: raw-data, Size: 90 GB, Created On: 2023-06-20
-Name: compliance-data, Size: 300 GB, Created On: 2022-01-01
+<img width="761" alt="Screenshot 2024-11-26 at 4 43 22 PM" src="https://github.com/user-attachments/assets/83b0cdd0-5d0d-41b1-9c84-4a815d1e929f">
 
-Cost Report by Region and Department:
-Region: us-west-2
-  Department: analytics, Total Cost: $2.76
-  Department: data-engineering, Total Cost: $2.07
-Region: us-east-1
-  Department: engineering, Total Cost: $0.23
-Region: eu-central-1
-  Department: ops, Total Cost: $1.84
-Region: ap-southeast-1
-  Department: security, Total Cost: $1.15
-Region: us-west-1
-  Department: qa, Total Cost: $0.34
-Region: us-east-2
-  Department: ops, Total Cost: $4.60
-Region: eu-west-1
-  Department: development, Total Cost: $0.69
-Region: ap-northeast-1
-  Department: analytics, Total Cost: $5.75
-Region: ca-central-1
-  Department: compliance, Total Cost: $6.90
-
-Buckets Recommended for Deletion:
-==================================================
-Name: prod-data, Size: 120 GB, Last Accessed: 2023-10-12
-Name: old-backups, Size: 200 GB, Last Accessed: 2020-08-15
-Name: app-analytics, Size: 250 GB, Last Accessed: 2021-03-18
-Name: compliance-data, Size: 300 GB, Last Accessed: 2022-01-01
-
-Buckets Recommended for Glacier Archival:
-==================================================
-Name: backup, Size: 80 GB, Last Accessed: 2022-11-30
-Name: raw-data, Size: 90 GB, Last Accessed: 2023-06-20
+<img width="564" alt="Screenshot 2024-11-26 at 4 43 38 PM" src="https://github.com/user-attachments/assets/47a8afc1-2bdd-4507-94f5-3d6accc31120">
