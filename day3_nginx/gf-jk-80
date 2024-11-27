@@ -1,6 +1,9 @@
 server {
     listen 80;
     server_name grafana.local;
+
+    ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;
+    ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
     
     location / {
         proxy_pass http://localhost:3000; # Grafana port
@@ -14,6 +17,9 @@ server {
 server {
     listen 80;
     server_name jenkins.local;
+
+    ssl_certificate /etc/ssl/certs/nginx-selfsigned.crt;
+    ssl_certificate_key /etc/ssl/private/nginx-selfsigned.key;
 
     location / {
         auth_basic "Restricted Access";
