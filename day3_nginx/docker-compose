@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  grafana:
+    image: grafana/grafana:latest
+    container_name: gf_cont
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    networks:
+      - nginx
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jk_cont
+    ports:
+      - "8080:8080"
+    networks:
+      - nginx
+    volumes:
+      - jenkins_data:/var/jenkins_home
+
+networks:
+  nginx:
+
+volumes:
+  jenkins_data:
